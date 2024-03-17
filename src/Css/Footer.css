@@ -1,0 +1,8 @@
+.foot {
+    text-align: center;
+    position: fixed;
+    background-color: aquamarine;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
