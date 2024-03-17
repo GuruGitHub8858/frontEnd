@@ -6,7 +6,7 @@ const Work = () => {
     const [data, setData] = useState([]);
 
     const handlePost = () => {
-        axios.post('https://backcloud-1.onrender.com:10000/register', { name })
+        axios.post('https://backcloud-1.onrender.com/register', { name })
             .then(() => {
                 alert('Data has been posted');
                 setName('');
@@ -18,7 +18,7 @@ const Work = () => {
     };
 
     const getData = () => {
-        axios.get('https://backcloud-1.onrender.com:10000/sender') // Update URL to match your backend endpoint
+        axios.get('https://backcloud-1.onrender.com/sender') // Update URL to match your backend endpoint
             .then(response => {
                 setData(response.data);
                 alert('Data has been retrieved');
